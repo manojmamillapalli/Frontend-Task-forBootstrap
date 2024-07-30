@@ -1,4 +1,119 @@
-.nav-link
-{
-    color: black;
+/* /* Style the navbar container */
+navbar {
+    width: 250px; /* Adjust width as needed */
+    background-color: white /* Background color for the navbar */
+    height: 100vh; /* Full height of the viewport */
+    position: fixed; /* Fixed positioning to stay on the side */
+    display: flex;
+    flex-direction: column; 
+    /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 10px; /* Padding inside the navbar */
+    border-right: 2px solid #ddd
+  }
+  
+  /* Style for Instagram link */
+  .instagram {
+    font-size: 24px; /* Larger font size */
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Text color */
+    margin-bottom: 20px; /* Space below Instagram link */
+  }
+  
+  /* Style for the list container */
+  .lists {
+    width: 100%; /* Full width of the navbar */
+  }
+  
+  /* Style the unordered list */
+  .unorderedlist {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  /* Style individual list items */
+  .list1 {
+    display: flex; /* Align items horizontally within the list item */
+    align-items: center; /* Center items vertically */
+    margin: 10px 0; /* Vertical space between items */
+    padding:4.5%;
+  }
+  
+  .list1 i {
+    margin-right: 10px; /* Space between icon and text */
+  }
+  
+  a {
+    text-decoration: none; 
+    color: #333; /* Text color */
+    font-size: 17px; /* Font size for list items */
+  }
+  
+  
+  .logo
+  {
+    font-size: 25px;
+  }
+  .main-content {
+    margin-left: 60px; /* This should match the width of the sidebar */
+    flex: 1;
+    padding: 20px;
+}
+
+.instagram-feed {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.post {
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.post-header .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-header .username {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+}
+
+.post-actions {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.post-actions i {
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.post-caption {
+    padding: 10px;
+}
+
+.post-caption .username {
+    font-weight: bold;
 }
