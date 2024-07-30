@@ -1,54 +1,54 @@
-/* /* Style the navbar container */
+
 navbar {
-    width: 250px; /* Adjust width as needed */
-    background-color: white /* Background color for the navbar */
-    height: 100vh; /* Full height of the viewport */
-    position: fixed; /* Fixed positioning to stay on the side */
+    width: 250px; 
+    background-color: white 
+    height: 100vh; 
+    position: fixed; 
     display: flex;
     flex-direction: column; 
-    /* Align items vertically */
-    align-items: center; /* Center items horizontally */
-    padding: 10px; /* Padding inside the navbar */
-    border-right: 2px solid #ddd
+    
+    align-items: center; 
+    padding: 10px;
+    border-right :2px solid #ddd
   }
   
-  /* Style for Instagram link */
+ 
   .instagram {
-    font-size: 24px; /* Larger font size */
+    font-size: 24px; 
     font-weight: bold;
-    text-decoration: none; /* Remove underline */
-    color: #333; /* Text color */
-    margin-bottom: 20px; /* Space below Instagram link */
+    text-decoration: none; 
+    color: #333; 
+    margin-bottom: 20px; 
   }
   
-  /* Style for the list container */
+  
   .lists {
-    width: 100%; /* Full width of the navbar */
+    width: 100%; 
   }
   
-  /* Style the unordered list */
+  
   .unorderedlist {
-    list-style-type: none; /* Remove bullet points */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
   }
   
-  /* Style individual list items */
+  
   .list1 {
-    display: flex; /* Align items horizontally within the list item */
-    align-items: center; /* Center items vertically */
-    margin: 10px 0; /* Vertical space between items */
+    display: flex; 
+    align-items: center; 
+    margin: 10px 0; 
     padding:4.5%;
   }
   
   .list1 i {
-    margin-right: 10px; /* Space between icon and text */
+    margin-right: 10px; 
   }
   
   a {
     text-decoration: none; 
-    color: #333; /* Text color */
-    font-size: 17px; /* Font size for list items */
+    color: #333; 
+    font-size: 17px; 
   }
   
   
@@ -57,7 +57,7 @@ navbar {
     font-size: 25px;
   }
   .main-content {
-    margin-left: 60px; /* This should match the width of the sidebar */
+    margin-left: 60px; 
     flex: 1;
     padding: 20px;
 }
@@ -140,7 +140,7 @@ navbar {
     }
     
     .main-content {
-        margin-right: 50px; /* Adjust margin to match sidebar width */
+        margin-right: 50px;
     }
     
     .sidebar .logo {
@@ -157,53 +157,8 @@ navbar {
     }
 }
 
-/* For screens smaller than 576px (phones) */
-@media (max-width: 576px) {
-    .sidebar {
-        display: none; /* Hide sidebar on very small screens */
-    }
-    
-    .main-content {
-        margin: 0; /* Remove right margin when sidebar is hidden */
-        padding: 10px;
-    }
-    
-    /* Add a top bar for small screens */
-    .top-bar {
-        position: fixed;
-        top: 0;
-        right: 0;
-        background-color: #ffffff;
-        border-bottom: 1px solid #dbdbdb;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding: 10px;
-        z-index: 1000;
-    }
-    
-    .top-bar .top-item {
-        display: flex;
-        align-items: center;
-        font-size: 18px;
-        color: #262626;
-    }
-    
-    .top-bar .top-item i {
-        font-size: 20px;
-        margin-right: 5px;
-    }
-    
-    .top-bar .top-item a {
-        color: #262626;
-        text-decoration: none;
-        font-weight: normal;
-    }
-    
-    .top-bar .top-item:last-child {
-        margin-right: 0;
-    }
-}
+
+
 @media (max-width: 576px) {
     .nav {
         display: none;
