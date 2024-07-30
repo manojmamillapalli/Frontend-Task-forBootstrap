@@ -155,59 +155,57 @@ navbar {
     .sidebar i {
         font-size: 20px;
     }
-    
-    .post-header .profile-pic {
-        width: 35px;
-        height: 35px;
-    }
-    
-    .post-header .username {
-        font-size: 14px;
-    }
-    
-    .post-actions i {
-        font-size: 20px;
-        margin-right: 8px;
-    }
 }
 
 /* For screens smaller than 576px (phones) */
 @media (max-width: 576px) {
     .sidebar {
-        width: 40px;
-        right: 0;
-        padding-top: 5px;
+        display: none; /* Hide sidebar on very small screens */
     }
     
     .main-content {
-        margin-right: 40px; /* Adjust margin to match sidebar width */
+        margin: 0; /* Remove right margin when sidebar is hidden */
         padding: 10px;
     }
     
-    .sidebar .logo {
+    /* Add a top bar for small screens */
+    .top-bar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #ffffff;
+        border-bottom: 1px solid #dbdbdb;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        z-index: 1000;
+    }
+    
+    .top-bar .top-item {
+        display: flex;
+        align-items: center;
         font-size: 18px;
-        margin-bottom: 5px;
+        color: #262626;
     }
     
-    .sidebar li {
-        margin-bottom: 10px;
+    .top-bar .top-item i {
+        font-size: 20px;
+        margin-right: 5px;
     }
     
-    .sidebar i {
-        font-size: 18px;
+    .top-bar .top-item a {
+        color: #262626;
+        text-decoration: none;
+        font-weight: normal;
     }
     
-    .post-header .profile-pic {
-        width: 30px;
-        height: 30px;
+    .top-bar .top-item:last-child {
+        margin-right: 0;
     }
-    
-    .post-header .username {
-        font-size: 12px;
-    }
-    
-    .post-actions i {
-        font-size: 18px;
-        margin-right: 6px;
+}
+@media (max-width: 576px) {
+    .nav {
+        display: none;
     }
 }
